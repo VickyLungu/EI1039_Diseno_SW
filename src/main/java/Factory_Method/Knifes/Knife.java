@@ -1,6 +1,6 @@
 package Factory_Method.Knifes;
 
-public class Knife {
+public abstract class Knife {
     String name;
     public void sharpen() {
         System.out.println("sharpen");

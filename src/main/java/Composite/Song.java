@@ -10,6 +10,15 @@ public class Song implements Component {
 
     @Override
     public void play() {
-        System.out.println("Escuchando... "+ cancion + " BY " + cantante);
+        System.out.println("Escuchando... "+ getName() + " BY " + getAutor());
+    }
+
+    @Override
+    public String getName() {
+        return cancion;
+    }
+
+    public String getAutor(){
+        return cantante;
     }
 }

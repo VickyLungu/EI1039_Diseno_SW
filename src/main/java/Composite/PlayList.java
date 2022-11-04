@@ -14,15 +14,24 @@ public class PlayList implements Component{
     public void play() {
         if (lista.size() > 0){
             for (Component component : lista) {
-                System.out.println("-----" + nombre +"-----");
+                System.out.println("-----" + getName() +"-----");
                 component.play();
             }
         }else{
-            System.out.println("Playlist "+nombre+ " vacía");
+            System.out.println("Playlist " + getName() + " vacía");
         }
+    }
+
+    @Override
+    public String getName() {
+        return nombre;
     }
 
     public void add(Component c){
         lista.add(c);
+    }
+
+    public void remove(Component c){
+        lista.remove(c);
     }
 }

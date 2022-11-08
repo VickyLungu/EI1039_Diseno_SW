@@ -27,6 +27,11 @@ public class PlayList implements Component {
         return nombre;
     }
 
+    @Override
+    public String getAutor() {
+        return null;
+    }
+
     public void add(Component c){
         lista.add(c);
     }

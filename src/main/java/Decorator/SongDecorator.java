@@ -1,6 +1,5 @@
 package Decorator;
 
-
 public class SongDecorator implements Component{
     protected Component songDecorated;
     private String reproductor;
@@ -11,7 +10,7 @@ public class SongDecorator implements Component{
 
     @Override
     public void play() {
-        System.out.println("Escuchando... "+ getName() + " BY "); //getAutor());
+        System.out.println("Escuchando... "+ getName() + " BY " + getAutor());
         reproduciendo();
     }
 
@@ -23,5 +22,9 @@ public class SongDecorator implements Component{
     @Override
     public String getName() {
         return songDecorated.getName();
+    }
+
+    public String getAutor() {
+        return songDecorated.getAutor();
     }
 }

@@ -1,4 +1,4 @@
-package Template_Method_Y_Strategy;
+package Strategy;
 
 public class DemoStrategySimple {
     public static void main(String[] args) {

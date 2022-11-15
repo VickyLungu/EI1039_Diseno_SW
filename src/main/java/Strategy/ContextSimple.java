@@ -1,4 +1,4 @@
-package Template_Method_Y_Strategy;
+package Strategy;
 
 public class ContextSimple {
     Classifier strategy;
@@ -11,5 +11,6 @@ public class ContextSimple {
     }
 
     public void run() {
+        strategy.run();
     }
 }

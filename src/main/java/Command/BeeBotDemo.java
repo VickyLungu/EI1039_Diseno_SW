@@ -29,6 +29,8 @@ public class BeeBotDemo {
         invoker.addCommand(new MoveForward(bot));
         invoker.addCommand(new TurnLeft(bot));
         invoker.addCommand(new MoveForward(bot));
+        invoker.addCommand(new MoveBack(bot));
+        invoker.undo();
         invoker.addCommand(new MoveForward(bot));
         invoker.addCommand(new TurnRight(bot));
         invoker.go();

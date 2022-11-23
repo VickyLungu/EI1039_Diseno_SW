@@ -13,6 +13,10 @@ public class CommandHistory {
         comandos.add(comando);
     }
 
+    public void undo(){
+        comandos.remove(comandos.size()-1);
+    }
+
     public void ejecuta() {
         for (Comando c: comandos) {
             c.ejecuta();

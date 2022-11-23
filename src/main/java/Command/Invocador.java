@@ -20,4 +20,8 @@ public class Invocador {
     public void go() {
         listaComandos.ejecuta();
     }
+
+    public void undo() {
+        listaComandos.undo();
+    }
 }
